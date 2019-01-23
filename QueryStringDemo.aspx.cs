@@ -7,11 +7,16 @@ using System.Web.UI.WebControls;
 
 namespace StateManagementProject
 {
-    public partial class WebForm1 : System.Web.UI.Page
+    public partial class QueryStringDemo : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            Label1.Text = "Welcome :" + Request.QueryString["uname"].ToString();
+
+        }
+
+        protected void btnOk_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("WebForm1.aspx?uname=" + txtName.Text);
         }
     }
 }
