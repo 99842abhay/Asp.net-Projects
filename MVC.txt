@@ -1,0 +1,50 @@
+Challenges in asp.net
+
+Page Life Cycle Events
+new page 
+
+--------------
+MVC 
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+MODEL -> data  -> C# class With  Properties -> plan old clr oblect (poco) object -> .cs POCO
+
+VIEW     ->  UI     ->  Razor  View (C# +  HTML + JAVASCRIPT  + JQUERY  + CSS  + BOOTSTRAP ) -> .cshtml / .vbhtml
+
+CONTROLLER  ->Handel Execution flow  -> .cs - > C# class
+
+Advantage of MVC  -->    sepration of concern
+
+
+framework(  ready made guidlines to follow)
+
+MVC Framework
+
+asp.net MVC web application  framework which follows MVC Pattern 
+-------------------------------------------------------------------------------------------------
+
+-> Every Method Inside The Controller is Action Method 
+-> Every Method Genarte one Screen
+
+---------------------------------------------------------
+
+What is View ?
+
+It is a set of rule to define a view
+
+view file extention in rozor view : .cshtml
+	ex: ""
+
+the following razor syntax can be in ant .cshtml file.
+
+1) Code Block
+2)PRINTING THE VALUS OF A VARIABLE3AZOR LOOPS
+3)EXPRESSION
+4STATIC TEXT
+---------------------------------
+
+Create a menu in asp.net 
+Create a tree view in asp.net 
+Create sitemap path in asp.net
+
+create asp.net server controll and add it to asp.net page
+

@@ -1,0 +1,192 @@
+Difference Between postback and roundtrip 
+Different life cycle of a page
+after which event page is displayed on the browser
+name one nondefault event of a button 
+
+==============
+topic ===
+
+
+database connectivity
+data grid view
+connected architecture
+disconnected architecture
+templates
+stae management 
+caching
+
+-----------
+
+connection string 
+-------------------
+string connStr = ConfigurationManager.ConnectionStrings["myConnectionString"].ConnectionString; 
+
+steps-->
+
+project menu -> Properties -> Settings -> clickhere to add one -> type name cnstor
+ -> select connection string fronm the drop down list -> Application has scope ->
+click on ... to complete the connection string 
+
+this will add connection string to web.config
+
+Add a web page -- toolbox -- click on data --> grid view
+--------------------------------------------------------------
+
+Validation controls  -->
+-------------------
+
+are used to validate other controls on the web page ,if you want to validate server side controls 
+then use validation controls
+
+--> RequiredFieldValidater
+
+	Id
+	controlToValidate
+	ErrorMessage
+
+--> CompareFieldValidater
+
+	Id
+	controlToValidate
+	COntrolToCOmpare
+ 	ErrorMessage
+
+--> Regular expression
+	
+        Id
+	controlToValidate
+	ValidationExpression
+	ErrorMessage
+	
+ 
+--> Range validater
+	
+	Id
+	controlToValidate
+	Type
+	MinValue
+	MaxValue
+	ErrorMessage
+
+
+--> Validation summary 
+
+--> 
+
+State management
+================
+
+Client
+----------
+
+1.view state
+
+2.Query String
+
+3.Cookies
+
+->packet of Information
+->Created By Server
+->sent to client browser
+->Saved in Browser Memories
+
+
+4.Hidden File
+
+
+Server
+---------
+1.Session
+
+2.Application
+
+--------------Question---------------
+
+What is session id
+
+ 
+how to remove session
+
+ 
+how to remove all session id
+
+session["emp"] = emp;  //clear
+abandon remove all session objects
+
+
+session saved using cookies are cleared using clear
+
+clear == turncate the session data
+
+abamdon remove object // destroy session
+
+
+ 
+where is all session saved 
+inside the memory where project is saved (inpocesses or outprocess 
+
+
+session expiry time 
+20 min
+
+
+what is inproc
+
+
+what is outproc 
+
+
+session state for sqlserver in asp.net
+----------------------------------------------------------------------------------------------------------------
+
+<connectionStrings>
+	<add name="constr" connectionString="" provider name = "" />
+</connectionStrings>
+
+<sessionState mode="SQLServer" timeout="20">
+	<providers>
+		<add name="constr" type="">
+
+		</add>
+	</providers>
+</sessionState>
+
+
+<sessionState 
+            mode="SQLServer"
+            sqlConnectionString="data source=127.0.0.1;user id=<username>;password=<strongpassword>"
+            cookieless="false" 
+            timeout="20" 
+    />
+
+====state server Syntax
+<configuration>
+
+<system.web>
+
+<sessionState mode="StateServer"  stateConnectionString="tcpip=127.0.0.1:42424" />
+
+</system.web>
+
+</configuration>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
